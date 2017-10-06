@@ -59,6 +59,12 @@ endif
 
 colorscheme default
 
+set backupdir=./.backup,~/.backup,.,/tmp
+set udir=~/.udir
+
 set sw=4
 set ts=4
 set nu
+
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
