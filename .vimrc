@@ -64,6 +64,7 @@ set udir=~/.udir
 
 set sw=4
 set ts=4
+set sts=4
 set nu
 
 nmap <leader>l :set list!<CR>
