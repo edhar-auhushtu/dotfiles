@@ -121,12 +121,12 @@ mode "resize" {
 # resize mode
 #bindsym $mod+r mode "resize"
 bindsym $mod+r 			exec $term -e ranger
-bindsym $mod+e 			exec firefox
-bindsym $mod+w 			exec evince
+bindsym $mod+q 			exec qutebrowser
+bindsym $mod+e 			exec evince
 
 
 
-for_window [class="Firefox"] move to workspace 2
+for_window [class="qutebrowser"] move to workspace 2
 for_window [class="Evince"] move to workspace 3
 
 
@@ -174,3 +174,4 @@ exec --no-startup-id xrandr --output VGA-1 --mode 1366x768
 exec --no-startup-id feh --bg-scale "/home/karras/Downloads/wallpaper.png"
 exec --no-startup-id compton
 
+workspace_auto_back_and_forth yes
